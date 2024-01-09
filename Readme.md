@@ -14,3 +14,19 @@ De acuerdo a los ultimas revisiones de las normativas y politicas de seguridad, 
 66bb9ec43660194bc066bd8b4d35b151  script.py
 
 Revisa si algun archivo fue alterado durante el ultimo ataque y de existir ¿cual seria?
+
+## Solucion
+Cree un script de bash el cual general los hash md5 de los archivos actuales y los compara con los antiguos. En grandes rasgos, el script hace lo siguiente:
+Crea un archivo llamado current_md5.txt que contiene los hash de los archivos actuales y toma el archivo old_md5.txt, el cual contiene los hash de los archivos "viejos". Luego los compara y muestra en consola los archivos modificados (no coinciden los hash).
+
+<img src="https://raw.githubusercontent.com/byteguy8/Images/main/Ejercicio-Cyberseguridad-1_current_md5.png">
+Archivo current_md5.txt creado por el script.
+
+
+<img src="https://raw.githubusercontent.com/byteguy8/Images/main/Ejercicio-Cyberseguridad-1_old_md5.png">
+Archivo old_md5.txt modificado por el script
+
+<img src="https://raw.githubusercontent.com/byteguy8/Images/main/Ejercicio-Cyberseguridad-1_result.png">
+Output del script
+
+Para que el script funcione debe de estar dentro del mismo directorio que PyJ_Systems (renombre el directorio para eliminar los espacios).
